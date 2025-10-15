@@ -112,6 +112,74 @@ double cube(double num)
     return num * num * num; 
 } // No semicolon here because it's a function definition (not a declaration)
 
+//Template is a feature in C++ that allows you to write generic and reusable code.
+//Templates can be used with functions and classes to create code that works with any data type.
+//Example of a function template
+// template <typename T> // Declare a template with a placeholder type T
+// T getMax(T a, T b) // Function that returns the maximum of two values
+// {
+//     return (a > b) ? a : b; // Return the greater of a
+// }
+
+//Functional Overloading
+//Function overloading is a feature in C++ that allows you to have multiple functions with the
+// same name but different parameter lists (different types or number of parameters).
+//The compiler determines which function to call based on the arguments passed to the function.
+//Example of function overloading           
+// int add(int a, int b) // Function to add two integers
+// {
+//     return a + b;        
+// }
+// double add(double a, double b) // Function to add two doubles        
+// {
+//     return a + b;
+// }
+
+// We can use different custom header files in our projects to organize code better
+// Example of including a custom header file
+// #include "myheader.h" // Include a custom header file named myheader.h
+// In myheader.h, we can declare functions, classes, or variables that we want to use in our main program
+// This helps to keep the code modular and easier to maintain
+// Also the definitions of the functions declared in the header file can be placed in a separate .cpp file
+// Example: myheader.cpp, the definitions of functions declared in myheader.h can be placed here
+
+//Default Arguments allow you to specify default values for function parameters
+//Example of default arguments
+// void greet(string name, string message = "Hello") // Function with a default argument
+// {    
+//     cout << message << ", " << name << "!\n"; // Output the greeting message
+// }    
+// If the caller does not provide a value for 'message', it will default to "Hello"
+// If the user passes arguments, they must be in the same order as the parameters
+// Variables with default arguments must be at the end of the parameter list
+// Example: void func(int a, int b = 10, int c = 20) is valid
+// Example: void func(int a = 10, int b, int c = 20) is invalid
+
+//Vector are dynamic arrays that can grow and shrink in size
+//Vectors are part of the C++ Standard Library and are defined in the <vector> header
+//Example of using vectors
+// #include <vector> // Include the vector header
+// vector<int> numbers; // Declare a vector of integers
+// numbers.push_back(10); // Add an element to the end of the vector
+// numbers.push_back(20); // Add another element
+// cout << numbers[0] << endl; // Output the first element of the vector
+// cout << numbers.size() << endl; // Output the size of the vector
+// Vectors provide many useful functions like push_back, pop_back, size, clear, etc
+//Vectors can have different data types like vector<string>, vector<double>, etc 
+// A single vector can also hold multiple data types using structures or classes
+// Example of a vector of structures
+// struct Person // Define a structure to hold person data
+// {
+//     string name; // Name of the person   
+//     int age;     // Age of the person
+// };
+// vector<Person> people; // Declare a vector of Person structures
+// Person p1; // Create a Person object
+// p1.name = "Alice"; // Set the name
+// p1.age = 30;       // Set the age
+// people.push_back(p1); // Add the Person object to the vector
+
+
 
 
 
